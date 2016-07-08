@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # coding=utf-8
 
+"""
+In order to run this program, you need to 
+- install [tensorflow](https://www.tensorflow.org/versions/r0.9/get_started/os_setup.html#virtualenv-installation). 
+- get an monitor to display the figure. 
+"""
+
 import tensorflow as tf
 import numpy as np
 
