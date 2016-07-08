@@ -4,6 +4,8 @@
 import tensorflow as tf
 import numpy as np
 
+
+# Produce num_points [x_data, y_data]
 num_points = 1000
 vector_set = []
 for i in xrange(num_points):
@@ -14,6 +16,7 @@ for i in xrange(num_points):
 x_data = [v[0] for v in vector_set]
 y_data = [v[1] for v in vector_set]
 
+# Use Linear regression (TensorFlow version) to solve this problem
 
 W = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
 b = tf.Variable(tf.zeros([1]))
@@ -32,6 +35,8 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 
 fig = plt.figure()
+
+# Plot the figure after each training_step
 
 def animate(i):
     fig.clear()
